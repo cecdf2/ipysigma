@@ -1,3 +1,9 @@
+/* Set some global parameters here */
+:root {
+  --text-color: Maroon;
+  --text-size: 16px;
+}
+
 /* Choices.js overrides */
 .ipysigma-widget .choices {
   margin-bottom: 5px;
@@ -70,7 +76,7 @@
   background-color: white;
   border: 1px solid #e0e0e0;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: var(--text-size);
   /* font-style: italic; */
   line-height: 16px;
 }
@@ -139,7 +145,7 @@
 
 .ipysigma-widget .ipysigma-tab-button.selectable {
   color: cornflowerblue;
-  text-decoration: underline;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -150,7 +156,7 @@
   background-color: white;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: var(--text-size);
   line-height: 16px;
   padding: 10px;
 }
@@ -163,7 +169,7 @@
   width: 100%;
   overflow-y: auto;
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: var(--text-size);
   line-height: 16px;
   padding: 10px;
 }
@@ -180,16 +186,16 @@
 }
 
 .ipysigma-widget .ipysigma-string {
-  color: #bc2828;
+  color: var(--text-color);
 }
 
 .ipysigma-widget .ipysigma-number {
-  color: #008800;
+  color: var(--text-color);
 }
 
 .ipysigma-widget .ipysigma-boolean,
 .ipysigma-widget .ipysigma-keyword {
-  color: #0457ab;
+  color: var(--text-color);
 }
 
 .ipysigma-widget .ipysigma-download-controls {
