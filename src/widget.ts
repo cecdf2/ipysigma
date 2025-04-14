@@ -1367,22 +1367,22 @@ export class SigmaView extends DOMWidgetView {
       innerHTML += '<hr>From kwargs:<br>' + kwargInfo.join('<br>');
     if (info.length !== 0)
       innerHTML += `<hr>Attributes:<br>` + info.join('<br>');
-    if (vizInfo.length !== 0)
-      innerHTML += '<hr>Known viz data:<br>' + vizInfo.join('<br>');
+//    if (vizInfo.length !== 0)
+//      innerHTML += '<hr>Known viz data:<br>' + vizInfo.join('<br>');
 
-    if (type === 'node') {
-      innerHTML += '<hr>Computed metrics:<br>';
-      innerHTML += `<b>degree</b> ${renderTypedValue(graph.degree(key))}<br>`;
+//    if (type === 'node') {
+//      innerHTML += '<hr>Computed metrics:<br>';
+//      innerHTML += `<b>degree</b> ${renderTypedValue(graph.degree(key))}<br>`;
 
-      if (graph.directedSize !== 0) {
-        innerHTML += `<b>indegree</b> ${renderTypedValue(
-          graph.inDegree(key)
-        )}<br>`;
-        innerHTML += `<b>outdegree</b> ${renderTypedValue(
-          graph.outDegree(key)
-        )}<br>`;
-      }
-    }
+//      if (graph.directedSize !== 0) {
+//        innerHTML += `<b>indegree</b> ${renderTypedValue(
+//          graph.inDegree(key)
+//        )}<br>`;
+//        innerHTML += `<b>outdegree</b> ${renderTypedValue(
+//          graph.outDegree(key)
+//        )}<br>`;
+//      }
+//    }
 
     this.itemInfoElement.innerHTML = innerHTML;
 
